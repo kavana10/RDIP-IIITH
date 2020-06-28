@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+<style>
+
+.nav{
+  font-family: arial;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+    
+}
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.right{
+        position: absolute;
+        top: 81px;
+        right: 16px;
+        font-size: 18px;
+    }
+
+</style>
+ 
+</head>
+<body>
+<div id="logo">
+	 <a  href="https://www.iiit.ac.in/ "><img  src="img.png" width="100" height="100"/></a>
+</div>
+<div class="right">
+	 <a  href="https://serc.iiit.ac.in/rdip ">RDIP</a>
+</div>
+
+<div class="nav">
+	 <a  href="homepage.html">Home</a>
+     <a  href="registration.html ">Registration Form</a>
+</div>
+<form  style="padding-top:50px" action="details.html" method="get">        
+	First Name <input type = "text" id="first name" name = "first name" />
+         <br> <br> 
+         Last name: <input type = "text"  name = "last name" />
+	<br> <br> 
+    Phone number: <input type = "text" name = "phn" />
+	<br> <br>
+    Gender:<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+    <br><br>
+   Reasons for RDIP:<input type="radio" id="HTML" name="HTML" value="HTML">
+  <label for="HTML">HTML</label>
+  <input type="radio" id="CSS" name="CSS" value="CSS">
+  <label for="female">CSS</label>
+  <input type="radio" id="JavaScript" name="JavaScript" value="JavaScript">
+  <label for="JavaScript">JavaScript</label>
+   <br><br>
+    College: <input type = "text" name = "college" />
+	<br> <br>
+    <input type="checkbox" id="Subject1" name="Subject1" value="DSA"> <span style="padding-left: 50px;"></span>
+            I hereby declare that details given by me are true
+    <br><br>
+    <button type="submit" value="Submit" id="submit" onClick="testJS()" >Submit</button>
+  <button type="reset" value="Reset">Reset</button>
+
+
+
+    </form>
+</div>
+</body>
+</html>
