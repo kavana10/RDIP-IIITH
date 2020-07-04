@@ -139,27 +139,24 @@ function game() {
             b = "Nuclear Bomb"
         }
        
-          var str = "Player 1 = " + a + "  <br> Player 2 = "+ b +" "
-            
-        document.getElementById('num').innerHTML = str
         
 
         if (nobj1 == nobj2) {
-             document.getElementById('i').innerHTML="TIE"
+             alert("Player 1 = " + a + "   Player 2 = "+ b +"  Winner=TIE");
             return false;
             
         }
         if ((nobj1 == 0 && nobj2 == 1) || (nobj1 == 1 && nobj2 == 0)) {
-            document.getElementById('i').innerHTML = "HUMAN SURVIVES"
+            alert( "Player 1 = " + a + "   Player 2 = "+ b +"  Winner=HUMAN SURVIVES")
             return false;
             
             
         } else if ((nobj1 == 0 && nobj2 == 2) || (nobj1 == 2 && nobj2 == 0)){
-            document.getElementById('i').innerHTML = "HUMAN DIES"
+            alert("Player 1 = " + a + "   Player 2 = "+ b +"  Winner=HUMAN DIES")
             return false;
         }
         else if ((nobj1 == 1 && nobj2 == 2) || (nobj1 == 2 && nobj2 == 1)){
-            document.getElementById('i').innerHTML = "COCKROCH SURVIVES"
+            alert ("Player 1 = " + a + "   Player 2 = "+ b +"  Winner=COCKROCH SURVIVES")
         return false;
 
         }
