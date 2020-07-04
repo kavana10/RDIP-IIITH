@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script  src="project.js"></script>>
+
+    
+    <style>
+        h1{
+            color:palevioletred
+        }
+        div {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+input[type=submit]:active {
+  background-color: purple;
+  color: white;
+  padding: 20px 20px;
+  margin: 8px 0;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:plum;
+}
+        input[type=text]{
+            text-align: center;
+            padding-left: 40px;
+            height: 25px;
+  
+            
+        }
+    
+    </style>
+</head>
+<body>
+<h1> FORM VALIDATION</h1>
+<div>
+<form name="myForm" onsubmit="return validateForm()" >
+   <label for="fname" style="font-size: 25px">Name </label>
+  <input type="text" id="fname" name="fname">
+  <br> <br> <br>
+    <label for="email" style="font-size: 25px">Email</label>
+  <input type="text" id="email" name="email">
+    <br> <br> <br>
+   <label for="phone" style="font-size: 25px">Phone Number</label>
+  <input type="text" id="phone" name="phone">
+          <br> <br> <br>
+  <input type="submit" value="Submit" >
+</form>
+    </div>
+
+</body>
+</html>
